@@ -71,7 +71,7 @@ export default function CheckOut(props) {
             })
         }
         else {
-            const url = 'https://boiling-bayou-06844.herokuapp.com/api/users/checkout'
+            const url = 'https://pure-peak-70321.herokuapp.com/api/users/checkout'
             fetch(url, {
                 method: 'POST',
                 body: JSON.stringify(checkoutData),

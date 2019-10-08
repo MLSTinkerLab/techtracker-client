@@ -69,7 +69,7 @@ export default function AdminInventory() {
             }
         }  
         
-        const url = 'https://boiling-bayou-06844.herokuapp.com/api/inventory'
+        const url = 'https://pure-peak-70321.herokuapp.com/api/inventory'
         e.target.reset();
         
         fetch(url, {
@@ -105,7 +105,7 @@ export default function AdminInventory() {
         updateConfirmationForm(null)
         const id = e.target.item.value
         const item = findInventory(inventory, id)
-        const url = `https://boiling-bayou-06844.herokuapp.com/api/inventory?id=${item.id}`
+        const url = `https://pure-peak-70321.herokuapp.com/api/inventory?id=${item.id}`
         e.target.reset();
 
         fetch(url, {

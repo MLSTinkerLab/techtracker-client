@@ -77,7 +77,7 @@ export default function CheckIn(props) {
             })
         }
         else {
-            const url = 'https://boiling-bayou-06844.herokuapp.com/api/users/checkin'
+            const url = 'https://pure-peak-70321.herokuapp.com/api/users/checkin'
             items.forEach(item => {
                 const currentNum = Number(userForm.checkedOut[item])
                 userForm.checkedOut[item] = (currentNum - formData[item])

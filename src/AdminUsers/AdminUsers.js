@@ -57,7 +57,7 @@ export default function AdminUser() {
         const userData = {
             'name': name
         }
-        const url = 'https://boiling-bayou-06844.herokuapp.com/api/users'
+        const url = 'https://pure-peak-70321.herokuapp.com/api/users'
         e.target.reset();
         fetch(url, {
             method: 'POST',
@@ -96,7 +96,7 @@ export default function AdminUser() {
             checkout = true
         }
 
-        const url = `https://boiling-bayou-06844.herokuapp.com/api/users?id=${user.id}&clearCheckOut=${checkout}`
+        const url = `https://pure-peak-70321.herokuapp.com/api/users?id=${user.id}&clearCheckOut=${checkout}`
 
         fetch(url, {
             method: 'DELETE',

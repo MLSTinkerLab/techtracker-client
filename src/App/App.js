@@ -33,9 +33,9 @@ function App() {
   /* initial data fetch */
   useEffect(() => {
     updateError(null)
-    const userURL = 'https://boiling-bayou-06844.herokuapp.com/api/users'
-    const inventoryURL = 'https://boiling-bayou-06844.herokuapp.com/api/inventory'
-    const checkoutURL = 'https://boiling-bayou-06844.herokuapp.com/api/users/checkout'
+    const userURL = 'https://pure-peak-70321.herokuapp.com/api/users'
+    const inventoryURL = 'https://pure-peak-70321.herokuapp.com/api/inventory'
+    const checkoutURL = 'https://pure-peak-70321.herokuapp.com/api/users/checkout'
     Promise.all([fetch(userURL), fetch(inventoryURL), fetch(checkoutURL)])
       .then(([userRes, inventoryRes, checkoutRes]) => {
         if (!userRes) {
