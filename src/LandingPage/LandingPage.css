@@ -10,6 +10,20 @@ div > .confirmation {
 }
 
 .info {
-  max-width: 600px;
+  max-width: 300px;
   margin: auto;
+}
+
+.info h3 {
+  margin-bottom: 5px;
+}
+
+.bulletpoint {
+  max-width: 175px;
+  margin: auto;
+}
+
+.bulletpoint li{
+  list-style: circle;
+  text-align: left;
 }
