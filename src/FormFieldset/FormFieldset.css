@@ -1,5 +1,5 @@
 fieldset {
-    margin: 15px 0;
+  margin: 15px 0;
 }
 
 .flex {
@@ -34,11 +34,13 @@ label {
   cursor: pointer;
   display: block;
   border: 2pt solid white;
+  padding: 5px;
   text-align: center;
+  position: relative;
 }
 
 .quantity {
-    visibility: hidden;
+  visibility: hidden;
 }
 
 input[type="checkbox"]:checked + label {
@@ -46,11 +48,22 @@ input[type="checkbox"]:checked + label {
 }
 
 input[type="checkbox"]:focus + label {
-  outline: white auto 5px;
+  outline: rgb(74, 189, 216, 0.5) auto 5px;
 }
 
 input[type="checkbox"]:checked ~ div {
-    visibility: visible !important;
+  visibility: visible !important;
+}
+
+.disabled {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(116, 116, 116, 0.5);
 }
 
 img {
@@ -73,5 +86,4 @@ img {
   .flexField {
     width: 45%;
   }
-
 }

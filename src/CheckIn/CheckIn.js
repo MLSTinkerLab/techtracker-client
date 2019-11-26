@@ -83,7 +83,7 @@ export default function CheckIn(props) {
       items.forEach(item => {
         const currentNum = Number(userForm.checkedOut[item]);
         userForm.checkedOut[item] = currentNum - formData[item];
-        if (userForm.checkedOut[item] === 0) {
+        if (userForm.checkedOut[item] <= 0) {
           const checkinData = {
             user_id: Number(userForm.id),
             inventory_id: item

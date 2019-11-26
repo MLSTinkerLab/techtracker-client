@@ -2,12 +2,12 @@ body {
   text-align: center;
   background-color: white;
   color: #333333;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .App_header {
   position: absolute;
-  background: url('../navImage.jpeg') no-repeat;
+  background: url("../navImage.jpeg") no-repeat;
   background-position-y: 15%;
   background-size: cover;
   top: 0;
@@ -23,14 +23,14 @@ body {
 }
 
 :focus {
-  outline: 2pt solid rgb(74, 189, 216, 0.5)
+  outline: 5px auto rgb(74, 189, 216, 0.5);
 }
 
 .title_header {
   position: absolute;
   left: 0;
   top: 70px;
-  background-color: rgb(253, 130, 4, .85);
+  background-color: rgb(253, 130, 4, 0.85);
   height: 80px;
   width: 50%;
   display: flex;
@@ -60,8 +60,9 @@ button {
   transition: all 0.33s ease;
 }
 
-button:hover, button:focus {
-  background-color: #FFB718;
+button:hover,
+button:focus {
+  background-color: #ffb718;
 }
 
 @media (min-width: 500px) {
